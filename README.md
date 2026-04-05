@@ -31,8 +31,19 @@
 
 ### 安装方法
 
-1. 克隆本仓库或下载 zip
-2. 将 `FaceUP-interview-prep/` 文件夹放入你的 Claude Code skills 目录：
+**方式一：命令行克隆（推荐）**
+
+```bash
+# macOS / Linux
+git clone https://github.com/spwdupto/FaceUP-interview-prep.git ~/.claude/skills/FaceUP-interview-prep
+
+# Windows（PowerShell）
+git clone https://github.com/spwdupto/FaceUP-interview-prep.git "$env:USERPROFILE\.claude\skills\FaceUP-interview-prep"
+```
+
+**方式二：下载 zip**
+
+1. 点击页面右上角 **Code → Download ZIP**，解压后将 `FaceUP-interview-prep/` 文件夹放入 Claude Code skills 目录：
    ```
    # macOS / Linux
    ~/.claude/skills/FaceUP-interview-prep/
@@ -40,22 +51,23 @@
    # Windows
    C:\Users\<用户名>\.claude\skills\FaceUP-interview-prep\
    ```
-3. 重启 Claude Code
+
+安装完成后重启 Claude Code。
 
 ### 使用方法
 
 在 Claude Code 中直接输入，例如：
 
 ```
-帮我准备字节跳动 AI PM 岗位的面试，我的项目经历是：[粘贴简历片段]
-```
-
-```
-我要面试路觅教育的 AI 师资产品经理（实习生），公司品牌手册已上传，请帮我准备面试问题和回答
+帮我准备 [公司名] [岗位名] 的面试，我的项目经历是：[粘贴简历片段]
 ```
 
 ```
 帮我为 QA 工程师岗位面试准备问题，简历如下：[简历内容]
+```
+
+```
+我要面试一家教育科技公司的销售岗位，以下是 JD 和我的工作经历：[内容]
 ```
 
 ### 文件结构
@@ -71,9 +83,9 @@ FaceUP-interview-prep/
 
 ### 设计理念
 
-**数字类问题回答不从"承认局限"开场** — 先建立数字背后的决策可信度，再展示自我反思意识。
+**回答问题先建立决策可信度，再展示自我反思意识** — 不以"承认局限"开场，而是先说清楚行动逻辑和定义，再诚实指出边界。
 
-五类数字问题各有专属框架：样本量类、精度/命中率类、性能/速度类、业务指标类、时间线类。
+问题类型划分为三类（数字类/决策类/方法论类），其中数字类细分五个子框架：样本量类、精度/命中率类、性能/速度类、业务指标类、时间线类，各有专属回答步骤。
 
 ---
 
@@ -97,16 +109,25 @@ PM · QA/Testing · Sales/BD · Research/ML · Backend Engineering
 
 ### Installation
 
-1. Clone this repo or download the zip
-2. Place the `FaceUP-interview-prep/` folder in your Claude Code skills directory:
-   ```
-   # macOS / Linux
-   ~/.claude/skills/FaceUP-interview-prep/
+**Option 1: Clone via command line (recommended)**
 
-   # Windows
-   C:\Users\<username>\.claude\skills\FaceUP-interview-prep\
-   ```
-3. Restart Claude Code
+```bash
+# macOS / Linux
+git clone https://github.com/spwdupto/FaceUP-interview-prep.git ~/.claude/skills/FaceUP-interview-prep
+
+# Windows (PowerShell)
+git clone https://github.com/spwdupto/FaceUP-interview-prep.git "$env:USERPROFILE\.claude\skills\FaceUP-interview-prep"
+```
+
+**Option 2: Download ZIP**
+
+Click **Code → Download ZIP**, unzip, and place the `FaceUP-interview-prep/` folder in your Claude Code skills directory:
+```
+~/.claude/skills/FaceUP-interview-prep/        # macOS / Linux
+C:\Users\<username>\.claude\skills\FaceUP-interview-prep\   # Windows
+```
+
+Restart Claude Code after installation.
 
 ### Usage
 
@@ -118,7 +139,7 @@ Help me prepare for a PM interview at [company]. My project experience: [resume 
 
 ### Key Design Principle
 
-Numeric question answers open with **action logic and definitions**, never with "admitting limitations." Five numeric sub-types each have a dedicated framework: sample size, accuracy/hit-rate, performance/speed, business metrics, and timeline.
+Answers open with **action logic and definitions first, self-awareness second** — never lead with "admitting limitations." Questions are categorized into three types (numeric, decision, methodology). Numeric questions are further split into five sub-frameworks: sample size, accuracy/hit-rate, performance/speed, business metrics, and timeline — each with its own dedicated answer steps.
 
 ---
 
